@@ -1,0 +1,1 @@
+SELECT COUNT(*),COUNT(Unemployment_rate)
