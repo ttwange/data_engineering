@@ -1,0 +1,2 @@
+SELECT COUNT(*) Number of Majors, MAX(Unemployment_rate) Highest Unemployment Rate
+FROM recent_grads
