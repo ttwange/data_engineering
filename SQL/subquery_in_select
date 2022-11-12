@@ -1,0 +1,7 @@
+SELECT CAST(COUNT(*) as FLOAT)/(SELECT COUNT(*)
+                                  FROM recent_grads
+                               ) AS proportion_abv_avg
+  FROM recent_grads
+ WHERE ShareWomen > (SELECT AVG(ShareWomen)
+                       FROM recent_grads
+                    );
