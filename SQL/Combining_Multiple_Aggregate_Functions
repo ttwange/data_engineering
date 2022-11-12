@@ -1,0 +1,2 @@
+SELECT AVG(Total), MIN(Men), MAX(Women)
+FROM recent_grads
