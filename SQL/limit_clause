@@ -1,0 +1,3 @@
+SELECT *
+FROM recent_grads
+LIMIT 5;
