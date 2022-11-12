@@ -1,0 +1,5 @@
+SELECT Major:  || LOWER(Major) AS Major,
+       Total, Men, Women, Unemployment_rate,
+       LENGTH(Major) AS Length_of_name
+  FROM recent_grads
+ ORDER BY Unemployment_rate DESC;
