@@ -1,0 +1,4 @@
+SELECT Major, Median, Unemployed
+from recent_grads
+where Median >10000 or ShareWomen < 0.5
+limit 20
