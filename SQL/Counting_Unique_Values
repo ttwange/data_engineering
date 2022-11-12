@@ -1,0 +1,2 @@
+SELECT COUNT(DISTINCT Major) unique_majors, COUNT(DISTINCT Major_category) unique_major_categories, COUNT(DISTINCT Major_code) unique_major_codes
+FROM recent_grads
