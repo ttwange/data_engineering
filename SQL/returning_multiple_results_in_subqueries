@@ -1,0 +1,6 @@
+SELECT Major_category, Major
+  FROM recent_grads
+ WHERE Major_category IN (SELECT Major_category
+                          FROM recent_grads
+                          GROUP BY Major_category                                                     ORDER BY SUM(TOTAL) DESC
+                          LIMIT 3)
