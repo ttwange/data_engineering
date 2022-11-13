@@ -1,0 +1,3 @@
+SELECT Major_category, Major
+FROM recent_grads
+WHERE Major_category IN ('Business', 'Humanities & Liberal Arts', 'Education')
