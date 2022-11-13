@@ -1,0 +1,3 @@
+SELECT AVG(CAST(Sample_size AS FLOAT)/CAST(Total AS FLOAT)) AS avg_ratio
+FROM recent_grads
+
