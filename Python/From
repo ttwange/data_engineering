@@ -1,0 +1,23 @@
+ opened_file = open('AppleStore.csv')
+2
+read_file = opened_file.read()
+3
+new_line_split = read_file.split(n)
+4
+opened_file.close()
+5
+​
+6
+first_row = new_line_split[0].split(,)
+7
+second_row = new_line_split[1].split(,)
+8
+third_row = new_line_split[2].split(,)
+9
+​
+10
+first_three_lists = [first_row, second_row, third_row]
+11
+​
+12
+print(first_three_lists) String To Lists
