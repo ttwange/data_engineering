@@ -1,0 +1,37 @@
+opened_file = open('AppleStore.csv')
+2
+from csv import reader
+3
+read_file = reader(opened_file)
+4
+apps_data = list(read_file)
+5
+opened_file.close()
+6
+​
+7
+freq_count_tot = {'0 - 1000mb': 0,'1000- 2000mb':0,'2000+mb':0}
+8
+​
+9
+for vars in apps_data[1:]:
+10
+    rating_count = float(vars[5])
+11
+    if rating_count <= 1000000.0:
+12
+        freq_count_tot['0 - 1000mb'] +=1
+13
+    elif 1000000.0< rating_count <= 1200000.0:
+14
+        freq_count_tot['1000- 2000mb'] += 1
+15
+    elif 1200000.0< rating_count <= 1800000.0:
+16
+        freq_count_tot['2000+mb'] += 1
+17
+    
+18
+print(freq_count_tot)
+
+ for the intervals
