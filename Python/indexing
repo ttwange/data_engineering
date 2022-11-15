@@ -1,10 +1,7 @@
-row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
-row_2 = ['Instagram', 0.0, 'USD', 2161558, 4.5]
-row_3 = ['Clash of Clans', 0.0, 'USD', 2130805, 4.5]
+content_ratings = {'4+': 4433, '9+': 987, '12+': 1155, '17+': 622}
 
-ratings_1 = row_1[3]
-ratings_2 = row_2[3]
-ratings_3 = row_3[3]
-
-total = ratings_3 + ratings_1 + ratings_2
-average = total/3
+over_9 = content_ratings['9+']
+over_17 = content_ratings['17+']
+                          
+print(over_17)
+print(over_9)
