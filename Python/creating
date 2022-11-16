@@ -1,7 +1,26 @@
-def square(number):
-    return number * number 
+# CODE FROM THE PREVIOUS SCREEN
+opened_file = open('AppleStore.csv')
+from csv import reader
+read_file = reader(opened_file)
+apps_data = list(read_file)
 
-squared_10 = square(10)
-squared_16 = square(16)
+def extract(index):
+    column = []    
+    for row in apps_data[1:]:
+        value = row[index]
+        column.append(value)    
+    return column
 
- our own functions
+genres = extract(11)
+
+
+def freq_table(list):
+    empty_dict = {}
+    for element in list:
+        if element in empty_dict:
+            empty_dict[element] += 1
+        else:
+            empty_dict[element] =1
+    return empty_dict
+
+genres_ft = freq_table(genres) a frequency table
