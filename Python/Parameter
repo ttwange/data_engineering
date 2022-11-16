@@ -1,0 +1,5 @@
+def square(number):
+    return number * number 
+
+squared_6= square(6)
+squared_11=square(11) and Arguments
