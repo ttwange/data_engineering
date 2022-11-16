@@ -1,0 +1,11 @@
+ratings = ['4+', '4+', '4+', '9+', '12+', '12+', '17+', '17+']
+
+content_ratings ={}
+
+for el in ratings:
+    if el in content_ratings:
+        content_ratings[el] +=1
+    else:
+        content_ratings[el] =1
+
+print(content_ratings)
