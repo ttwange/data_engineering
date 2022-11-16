@@ -2,18 +2,28 @@ opened_file = open('AppleStore.csv')
 from csv import reader
 read_file = reader(opened_file)
 apps_data = list(read_file)
-opened_file.close()
 
-non_free_games_social_ratings = []
-for row in apps_data[1:]:
-    rating = float(row[7])
-    genre = row[11]
-    price = float(row[4])
-    
-    if (genre == 'Social Networking' or genre == 'Games') and price != 0:
-        non_free_games_social_ratings.append(rating)
-        
-avg_non_free = sum(non_free_games_social_ratings) / len(non_free_games_social_ratings)
+def extract(data_set, index):
+    column = []    
+    for row in data_set[1:]:
+        value = row[index]
+        column.append(value)    
+    return column
 
-# Non-free apps (average)
-print(avg_non_free) Logical Operators
+def find_sum(a_list):
+    a_sum = 0
+    for element in a_list:
+        a_sum += float(element)
+    return a_sum
+
+def find_length(a_list):
+    length = 0
+    for element in a_list:
+        length += 1
+    return length 
+
+def mean(data_set, index):
+    list= extract(data_set,index)
+    return find_sum(list)/ find_length(list)
+
+avg_price = mean(apps_data,4) Functions
