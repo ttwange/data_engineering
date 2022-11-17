@@ -1,6 +1,17 @@
-facebook = '''Facebook's rating is '''
-fb_rating = 3.5
-fb_rating_str = str(fb_rating)
-fb = facebook + fb_rating_str
-
-print(fb) operations
+for row in moma:
+    gender = row[5]
+    nationality = row[2]
+    
+    
+    gender = gender.title()
+    if not gender:
+        gender = 'Gender Unknown/Other'
+    
+    row[5] = gender
+    
+    
+    nationality = nationality.title()
+    if not nationality:
+        nationality = 'Nationality Unknown'
+        
+    row[2] = nationality Capitalization
