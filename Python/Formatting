@@ -1,0 +1,6 @@
+tr = 'The population of {} is {:,.2f} million'
+for country in pop_millions:
+    name = country[0]
+    pop = country[1]
+    output = f'The population of {name} is {pop:,.2f} million'
+    print(output) Numbers Inside Strings
