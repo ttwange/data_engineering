@@ -1,0 +1,17 @@
+def clean_and_convert(date):
+    # check that we don't have an empty string
+    if date != '':
+        # move the rest of the function inside
+        # the if statement
+        date = date.replace('(', '')
+        date = date.replace(')', '')
+        date = int(date)
+    return date
+
+
+
+for row in moma:
+    BeginDate = row[3]
+    EndDate = row[4]
+    row[3] = clean_and_convert(BeginDate)
+    row[4] = clean_and_convert(EndDate) During Data Cleaning
