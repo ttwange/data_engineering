@@ -1,0 +1,9 @@
+def strip_characters(string):
+    for char in bad_chars:
+        string = string.replace(char,'')
+    return string
+
+stripped_test_data = []
+for d in test_data:
+    date = strip_characters(d)
+    stripped_test_data.append(date) Numbers from Complex String
