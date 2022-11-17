@@ -1,0 +1,15 @@
+ # Variables you create in previous screens
+# are available to you, so you don't need
+# to read the CSV again
+
+for row in moma:
+    nationality = row[2]
+    gender = row[5]
+    nationality = nationality.replace('(','')
+    nationality = nationality.replace(')','')
+    row[2] = nationality
+    gender = gender.replace('(','')
+    gender = gender.replace(')','')
+    row[5] = gender
+
+moma[:4] Nationality and Gender Columns
