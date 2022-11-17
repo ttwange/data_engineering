@@ -1,0 +1,6 @@
+artist = 'Pablo Picasso'
+birth_year = 1881
+
+variable = (f'{artist}\'s birth year is {birth_year}')
+
+print(variable) Variables into strings
