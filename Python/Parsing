@@ -1,9 +1,23 @@
-def strip_characters(string):
-    for char in bad_chars:
-        string = string.replace(char,'')
-    return string
-
-stripped_test_data = []
-for d in test_data:
-    date = strip_characters(d)
-    stripped_test_data.append(date) Numbers from Complex String
+def process_date(year):
+    if - in year:
+        e_year= year.split('-')
+        year1 = e_year[0]
+        year2 = e_year[1]
+        year_total = (int(year1) + int(year2))/ 2
+        i_year = round(year_total)
+    else:
+        i_year = int(year)
+    return i_year
+    
+processed_test_data = []
+for y in stripped_test_data:
+    t = process_date(y)
+    processed_test_data.append(t)
+    
+for row in moma:
+    date = row[6]
+    r = strip_characters(date)
+    t = process_date(r)
+    row[6] = t
+        
+processed_test_data Numbers from Complex Strings, part 2
