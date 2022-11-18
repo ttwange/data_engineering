@@ -1,0 +1,7 @@
+class NewList(DQ):
+    def first_method(self):
+        return 'This is my first method'
+    
+newlist = NewList()
+
+result = newlist.first_method() self
