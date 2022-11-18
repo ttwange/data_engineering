@@ -7,10 +7,18 @@ class NewList(DQ):
     
     def __init__(self, initial_state):
         self.data = initial_state
-    def append(self, new_item):
-        self.data += [new_item]
+        self.new_length()
         
-my_list = NewList([1,2,3,4,5])
-print(my_list.data)
-
-my_list.append(6) an Append Method
+    def new_length(self):
+        length = 0
+        for value in self.data:
+            length += 1
+        self.length = length
+            
+    
+    def append(self, new_item):
+        
+        #Append new_item to the NewList
+        
+        self.data = self.data + [new_item]
+        self.new_length()  and Updating an attribute
