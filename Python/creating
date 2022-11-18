@@ -1,6 +1,16 @@
+# The NewList definition from the previous
+# screen is copied here for your convenience
+
 class NewList(DQ):
-    def return_list(self,input_list):
-        return input_list
     
-newlist = NewList()
-result = newlist.return_list([1,2,3]) a Method That Accepts an Argument
+    #A Python list with some extras!
+    
+    def __init__(self, initial_state):
+        self.data = initial_state
+    def append(self, new_item):
+        self.data += [new_item]
+        
+my_list = NewList([1,2,3,4,5])
+print(my_list.data)
+
+my_list.append(6) an Append Method
