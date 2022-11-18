@@ -1,6 +1,6 @@
 class NewList(DQ):
-    def first_method():
-        return 'This is my first method'
+    def return_list(self,input_list):
+        return input_list
     
 newlist = NewList()
-     a method
+result = newlist.return_list([1,2,3]) a Method That Accepts an Argument
