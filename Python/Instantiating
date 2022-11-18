@@ -1,0 +1,4 @@
+class NewList(DQ):
+    pass
+     
+newlist_1 = NewList() a class
