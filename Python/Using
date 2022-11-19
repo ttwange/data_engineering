@@ -1,3 +1,6 @@
-age1 = I am thirty-one years old
-age2 = age1.replace('thirty-one','thirty-two')
-age2 Replace Method on Substrings
+import datetime as dt
+date_format = '%m/%d/%y %H:%M'
+for row in potus:
+    start_date = row[2]
+    start_date = dt.datetime.strptime(start_date, date_format)
+    row[2] = start_date Strptime
