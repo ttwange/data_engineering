@@ -1,0 +1,6 @@
+appt_times =[]
+
+for row in potus:
+    dt_time = row[2]
+    time_dt = dt_time.time()
+    appt_times.append(time_dt) Class
