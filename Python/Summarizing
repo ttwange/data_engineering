@@ -1,0 +1,18 @@
+for row in potus:
+    end_date = row[3]
+    end_date = dt.datetime.strptime(end_date, '%m/%d/%y %H:%M')
+    row[3] = end_date
+    
+    
+appt_lengths = {}
+for row in potus:
+    start_date = row[2]
+    end_date = row[3]
+    lengths = end_date - start_date
+    if lengths not in appt_lengths:
+        appt_lengths[lengths] = 1
+    else:
+        appt_lengths[lengths] += 1
+
+min_length = min(appt_lengths)
+max_length = max(appt_lengths) Appointment Lengths
