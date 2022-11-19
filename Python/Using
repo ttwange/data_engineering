@@ -1,6 +1,9 @@
-import datetime as dt
-date_format = '%m/%d/%y %H:%M'
+visitors_per_month = {}
+
 for row in potus:
-    start_date = row[2]
-    start_date = dt.datetime.strptime(start_date, date_format)
-    row[2] = start_date Strptime
+    month_dt = row[2]
+    month_str = month_dt.strftime('%B, %Y')
+    if month_str not in visitors_per_month:
+        visitors_per_month[month_str] =1
+    else:
+        visitors_per_month[month_str] += 1 Srtftime
