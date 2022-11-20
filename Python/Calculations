@@ -5,4 +5,4 @@ dt_4 = dt.datetime(2001, 1, 1, 8, 24, 13)
 
 answer_1 = dt_2 - dt_1
 answer_2 = dt.timedelta(56) + dt_3
-answer_3 =  dt_4 - dt.timedelta(seconds= 3600) with dates and times
+answer_3 =  dt_4 - dt.timedelta(seconds= 3600) with Dates and Times
