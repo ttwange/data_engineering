@@ -1,2 +1,2 @@
 min_time = min(appt_times)
-max_time = max(appt_times) time objects
+max_time = max(appt_times) time Objects
