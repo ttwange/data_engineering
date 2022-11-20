@@ -1,0 +1,10 @@
+visitors_per_month = {}
+
+for row in potus:
+    month_dt = row[2]
+    month_str = month_dt.strftime('%B, %Y')
+    if month_str not in visitors_per_month:
+        visitors_per_month[month_str] =1
+    else:
+        visitors_per_month[month_str] += 1
+     strftime
