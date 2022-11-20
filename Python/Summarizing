@@ -15,4 +15,4 @@ for row in potus:
         appt_lengths[lengths] += 1
 
 min_length = min(appt_lengths)
-max_length = max(appt_lengths) Appointment Lengths
+max_length = max(appt_lengths) Appointment lengths
