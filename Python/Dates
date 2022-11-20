@@ -1,0 +1,5 @@
+opened_file = open('potus_visitors_2015.csv')
+from csv import reader
+read_file = reader(opened_file)
+potus = list(read_file)
+potus = potus[1:] and Times
