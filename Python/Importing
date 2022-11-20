@@ -1,0 +1,8 @@
+# import all definitions
+from csv import *
+​
+# all definitions from the module are
+# available using the format definition_name
+reader()
+writer()
+get_dialect() using wildcards
