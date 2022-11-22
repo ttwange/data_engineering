@@ -1,0 +1,4 @@
+bin_1 = bin(12345)
+bin_2 = bin(1337)
+print(bin_1)
+print(bin_2)
