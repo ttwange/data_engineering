@@ -1,0 +1,4 @@
+weight_digit_2 = (10**2)
+value_digit_2 = weight_digit_2 * 2
+weight_digit_5 = (10**3)
+value_digit_5 = weight_digit_5 *  5
