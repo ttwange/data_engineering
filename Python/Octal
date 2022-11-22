@@ -1,0 +1,2 @@
+octal_999 = oct(999)
+original = int('0o1747',8)
