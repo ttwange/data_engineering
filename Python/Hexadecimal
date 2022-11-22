@@ -1,0 +1,3 @@
+red_hex = hex(213)
+green_hex = hex(111)
+blue_hex = hex(56)
