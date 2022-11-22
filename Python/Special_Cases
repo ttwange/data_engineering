@@ -1,0 +1,2 @@
+hex_3501 = hex(3501)
+decimal_F = int('F',16)
