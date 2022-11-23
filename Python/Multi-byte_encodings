@@ -1,0 +1,2 @@
+encoded = trad_chinese.encode(encoding= 'BIG5', errors = 'Ignore')
+len(encoded)
