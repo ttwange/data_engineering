@@ -1,0 +1,3 @@
+encoded_utf8 = sentence.encode(encoding = 'utf-8', errors = 'replace')
+
+encoded_ascii = sentence.encode(encoding = 'ascii', errors = 'replace')
