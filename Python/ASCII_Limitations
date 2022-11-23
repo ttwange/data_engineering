@@ -1,0 +1,6 @@
+text = 'The Swedish word for quest is sökande'
+
+encoded = text.encode(encoding = 'ascii', errors = 'replace')
+print(encoded)
+
+print(type(encoded))
