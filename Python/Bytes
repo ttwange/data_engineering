@@ -1,0 +1,5 @@
+bytes1 = bytes.fromhex('02')
+bytes2 = bytes.fromhex('5a')
+bytes3 = bytes.fromhex('ff')
+
+print(bytes1,bytes2,bytes3)
