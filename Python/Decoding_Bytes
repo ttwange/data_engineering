@@ -1,0 +1,7 @@
+ decoded_cp1252 = encoded.decode(encoding='cp1252')
+
+import chardet
+
+encoding = chardet.detect(encoded)
+
+decoded = encoded.decode(encoding='utf-8')
