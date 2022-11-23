@@ -1,0 +1,11 @@
+string_1 = 'lowercase'
+string_2 = 'UPPERCASE'
+
+def check_uppercase (tstring):
+    for t in tstring:
+        if not (ord(t) >= 65 and ord(t) <= 90):
+            return False
+    return True
+            
+print(check_uppercase(string_2))
+check_uppercase(string_2)
