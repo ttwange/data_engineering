@@ -1,0 +1,4 @@
+data = 'QUEST'
+
+for i in data:
+    print(bin(ord(i)))
