@@ -1,0 +1,2 @@
+with open('dialog.txt') as file:
+    lines = list(file)
