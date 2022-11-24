@@ -1,0 +1,5 @@
+import chardet
+with open('kyoto_restaurants.csv', mode='rb') as file:
+          raw_bytes = file.read()
+
+detected_encoding = chardet.detect(raw_bytes)
