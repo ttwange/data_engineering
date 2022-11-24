@@ -1,0 +1,3 @@
+with open('my_file.txt', mode= 'w') as file:
+    file.write('first line\n')
+    file.write('second line\n')
