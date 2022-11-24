@@ -1,0 +1,7 @@
+with open('append.txt', mode='a') as file:
+    file.write('my line\n')
+    
+with open('append.txt', encoding= 'UTF-8') as file:
+    lines_appended = list(file)
+    
+print(lines_appended)
