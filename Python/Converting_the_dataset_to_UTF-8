@@ -1,0 +1,7 @@
+import csv
+with open('kyoto_restaurants.csv', encoding='UTF-16') as file:
+    rows = list(csv.reader(file))
+with open('kyoto_restaurants_utf8.csv',mode='w', encoding='UTF-8') as file:
+    writer = csv.writer(file)
+    for row in rows:
+        writer.writerow(row)
