@@ -1,0 +1,7 @@
+import csv
+with open('kyoto_restaurants.csv', encoding = 'utf16') as rows:
+    rows = list(csv.reader(rows))
+
+num_rows = len(rows)
+
+first_row = rows[1]
