@@ -1,0 +1,5 @@
+import sys
+c = 2147483647
+num_bytes = (sys.getsizeof(c))
+
+num_mb = (1000000000 * num_bytes) / (1000000)
