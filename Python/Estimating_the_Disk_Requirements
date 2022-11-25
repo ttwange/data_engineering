@@ -1,0 +1,14 @@
+num_days_in_a_year = 365
+num_years = 20
+bytes_per_char = 32 / 8
+num_transactions = 1000000
+username_size = 20
+product_name_size = 50
+
+total_days = num_days_in_a_year * num_years
+bytes_per_transaction = bytes_per_char * (2 * username_size + product_name_size)
+bytes_per_day = bytes_per_transaction * num_transactions
+total_bytes = bytes_per_day * total_days
+bytes_in_gb = 10**9
+
+num_gb = total_bytes/bytes_in_gb
