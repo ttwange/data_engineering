@@ -1,0 +1,3 @@
+import numpy as np
+print(np.binary_repr(-2147483648, width = 32))
+print(np.binary_repr(2147483647, width = 32))
