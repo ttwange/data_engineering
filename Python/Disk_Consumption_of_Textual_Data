@@ -1,0 +1,9 @@
+with open('utf8.txt', mode='w', encoding = 'UTF-8') as file:
+    file.write(messages)
+    
+size_utf8 = os.path.getsize('utf8.txt')
+
+with open('utf32.txt', mode='w', encoding = 'UTF-32') as file:
+    file.write(messages)
+    
+size_utf32 = os.path.getsize('utf32.txt')
