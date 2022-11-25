@@ -1,0 +1,3 @@
+size_s = sys.getsizeof(s)
+ss = s+s
+size_ss = sys.getsizeof(ss)
