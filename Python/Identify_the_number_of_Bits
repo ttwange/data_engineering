@@ -1,0 +1,10 @@
+def minimum_required_bits(list_of_integers):
+    min_req_bits = 0 
+    for value in list_of_integers:
+        nb_bits = int.bit_length(value)
+        min_req_bits = max(min_req_bits, nb_bits)
+    return min_req_bits
+with open('identifiers.txt', encoding = 'UTF-8') as file:
+    rows = list(file)
+    value =  [int(row) for row in rows]
+    print(minimum_required_bits(value))
