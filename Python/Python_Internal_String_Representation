@@ -1,0 +1,6 @@
+
+
+message_latin_bytes = message.encode(encoding = 'Latin-1',errors = 'ignore')
+cleaned_message = message_latin_bytes.decode(encoding = 'Latin-1', errors = 'ignore')
+
+message_size = sys.getsizeof(message) 
