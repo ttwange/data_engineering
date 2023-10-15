@@ -14,12 +14,24 @@
 
 # fib(100)
 
-def fact(x):
-  c = 1
+# def fact(x):
+#   c = 1
 
-  for i in range(1, x+1):
-    c *= i
-    yield c
+#   for i in range(1, x+1):
+#     c *= i
+#     yield c
 
-for z in fact(3):
-  print(z)
+# for z in fact(3):
+#   print(z)
+
+#recussion is a function calling itself
+
+def fact(n):
+  if (n==0 or n==1):
+    return 1
+  else:
+    return n*fact(n-1)
+  
+result = fact(5)
+
+print(result)
