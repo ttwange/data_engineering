@@ -37,6 +37,11 @@
 # print(result)
 
 
-for x in range(1,5):
-  a = lambda x: x ** 2
-  print(a(x))
+# for x in range(1,5):
+#   a = lambda x: x ** 2
+#   print(a(x))
+
+y = [1,2,3,4,5,6,7,8,9]
+
+b = map(lambda x: x ** 2,y)
+print(list(b))
