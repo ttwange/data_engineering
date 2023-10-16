@@ -43,5 +43,9 @@
 
 y = [1,2,3,4,5,6,7,8,9]
 
-b = map(lambda x: x ** 2,y)
-print(list(b))
+# b = map(lambda x: x ** 2,y)
+# print(list(b))
+
+c = list(filter(lambda x: x % 2 == 0, y))
+
+print(c)
