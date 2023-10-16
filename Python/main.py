@@ -26,12 +26,17 @@
 
 #recussion is a function calling itself
 
-def fact(n):
-  if (n==0 or n==1):
-    return 1
-  else:
-    return n*fact(n-1)
+# def fact(n):
+#   if (n==0 or n==1):
+#     return 1
+#   else:
+#     return n*fact(n-1)
   
-result = fact(5)
+# result = fact(5)
 
-print(result)
+# print(result)
+
+
+for x in range(1,5):
+  a = lambda x: x ** 2
+  print(a(x))
