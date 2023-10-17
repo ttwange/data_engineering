@@ -55,19 +55,29 @@
 # d = reduce(lambda x,y : x+[y ** 2],y,[])
 # print(list(d))
 
-def funct(fun):
-  def wrapper(*args, **kwargs):   
-    print("calling before the fun")
-    result = fun(*args, **kwargs)
-    print("Calling after the fun")
-    return result
-  return wrapper
+# def funct(fun):
+#   def wrapper(*args, **kwargs):   
+#     print("calling before the fun")
+#     result = fun(*args, **kwargs)
+#     print("Calling after the fun")
+#     return result
+#   return wrapper
 
 
-@funct
-def my_sum(a,b):
-  return a + b
+# @funct
+# def my_sum(a,b):
+#   return a + b
 
-result = my_sum(1,2)
-print(result)
+# result = my_sum(1,2)
+# print(result)
+
+class Computer:
+
+
+  def config(self):
+    print("15, 16gb, 1TB")
+
+com1 = Computer()
+
+com1.config()
 
