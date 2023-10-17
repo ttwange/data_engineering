@@ -41,7 +41,7 @@
 #   a = lambda x: x ** 2
 #   print(a(x))
 
-y = [1,2,3,4,5,6,7,8,9]
+# y = [1,2,3,4,5,6,7,8,9]
 
 # b = map(lambda x: x ** 2,y)
 # print(list(b))
@@ -50,8 +50,24 @@ y = [1,2,3,4,5,6,7,8,9]
 
 # print(c)
 
-from functools import reduce
+# from functools import reduce
 
-d = reduce(lambda x,y : x+[y ** 2],y,[])
-print(list(d))
+# d = reduce(lambda x,y : x+[y ** 2],y,[])
+# print(list(d))
+
+def funct(fun):
+  def wrapper(*args, **kwargs):   
+    print("calling before the fun")
+    result = fun(*args, **kwargs)
+    print("Calling after the fun")
+    return result
+  return wrapper
+
+
+@funct
+def my_sum(a,b):
+  return a + b
+
+result = my_sum(1,2)
+print(result)
 
