@@ -73,11 +73,18 @@
 
 class Computer:
 
+  def __init__(self, ram, cpu):
+    self.cpu  = cpu
+    self.ram = ram
 
   def config(self):
-    print("15, 16gb, 1TB")
+    print(" Config is", self.cpu, self.ram)
 
-com1 = Computer()
+com1 = Computer("i7",16)
+
+#com1.config()
+
+
 
 com1.config()
 
